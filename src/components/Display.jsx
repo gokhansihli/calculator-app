@@ -1,3 +1,3 @@
 export default function Display({ currentValue }) {
-  return <div>{currentValue}</div>;
+  return <div className="display">{currentValue}</div>;
 }
