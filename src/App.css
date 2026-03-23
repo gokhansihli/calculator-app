@@ -5,8 +5,64 @@
   text-align: center;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 280px;
+  background: black;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+  background: black;
+  color: white;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+
+.button-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
 button {
-  width: 50px;
-  height: 30px;
-  margin: 4px;
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #555;
+}
+
+button.operator {
+  background: orange;
+  color: white;
+}
+
+button.operator:hover {
+  background: #ffb84d;
+}
+
+button.special {
+  background: #a5a5a5;
+  color: black;
 }

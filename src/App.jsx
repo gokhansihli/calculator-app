@@ -43,7 +43,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="calculator">
       <Display currentValue={currentValue} />
       <ButtonPanel
         onNumberClick={handleNumberClick}
@@ -51,7 +51,7 @@ function App() {
         onEqualsClick={handleEqualsClick}
         onClearClick={handleClearClick}
       />
-    </>
+    </div>
   );
 }
 
